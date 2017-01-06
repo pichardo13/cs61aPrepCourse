@@ -1,6 +1,7 @@
 count = 0
 puts "Hi honey!"
 while true
+	year = rand(1930...1960)
 	answer = gets.chomp
 	if answer == "BYE"
 		count += 1
@@ -9,7 +10,7 @@ while true
 	end
 
 	if count < 3
-		puts "HUH? NOT SINCE 1938!" 
+		puts "HUH? NOT SINCE " +year.to_s + "!" 
 	end
 
 	if count == 3
