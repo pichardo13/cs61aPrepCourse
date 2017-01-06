@@ -1,9 +1,19 @@
+count = 0
+puts "Hi honey!"
 while true
 	answer = gets.chomp
-	if answer*3  == answer.upcase * 3
-		puts "Ok, bye hunny."
-		break
+	if answer == "BYE"
+		count += 1
 	else	
-		puts "HUH?! SPEAK UP, SONNY!"
+		count = 0
+	end
+
+	if count < 3
+		puts "HUH? NOT SINCE 1938!" 
+	end
+
+	if count == 3
+		puts "OK, BYE HUNNY."
+		break
 	end
 end
